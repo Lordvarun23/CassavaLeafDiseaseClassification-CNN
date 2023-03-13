@@ -48,4 +48,4 @@ if image_file is not None:
     print("Succesfully loaded weights!!")
     res = np.argmax(model.predict(image))
     name = {"0": "Cassava Bacterial Blight (CBB)", "1": "Cassava Brown Streak Disease (CBSD)","2": "Cassava Green Mottle (CGM)", "3": "Cassava Mosaic Disease (CMD)", "4": "Healthy"}
-    st.subheader("Result:"+name[str(res)])
+    st.subheader(name[str(res)])
